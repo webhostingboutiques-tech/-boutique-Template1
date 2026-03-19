@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Modern Saree Boutique</title>
+    <meta name="description" content="Discover the latest trendy sarees with modern elegant designs at Aura Boutique.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Aura.</div>
+        <nav class="nav-links">
+            <a href="#collections">Collections</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <div class="cart-icon" id="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                <span class="cart-count">0</span>
+            </div>
+            <button class="menu-btn" aria-label="Menu" id="menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fade-up">
+                <h1>Timeless Elegance,<br><span>Modern Charm.</span></h1>
+                <p>Discover our exclusive luxury saree collection blending traditional weaving with contemporary trends.</p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-image slide-in-right">
+                <img src="images/hero-saree.png" alt="Elegant modern saree" id="hero-img" onerror="this.src='https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section id="collections" class="section-padding collections">
+            <div class="section-title fade-up">
+                <h2>Featured Collections</h2>
+                <p>Handpicked contemporary sarees for the modern woman</p>
+            </div>
+            <div class="grid-container">
+                <!-- Card 1 -->
+                <div class="product-card fade-up">
+                    <div class="card-image">
+                        <img src="images/saree1.png" alt="Burgundy Silk Saree" onerror="this.src='https://images.unsplash.com/photo-1583391733958-d259728f3ea7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="1" data-name="Midnight Burgundy Silk" data-price="240" data-img="images/saree1.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Midnight Burgundy Silk</h3>
+                        <p class="price">$240.00</p>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card fade-up" style="transition-delay: 0.1s">
+                    <div class="card-image">
+                        <img src="images/saree2.png" alt="Emerald Velvet Drape" onerror="this.src='https://images.unsplash.com/photo-1605518216938-7c31b7b14ad0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="2" data-name="Emerald Velvet Drape" data-price="310" data-img="images/saree2.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Emerald Velvet Drape</h3>
+                        <p class="price">$310.00</p>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card fade-up" style="transition-delay: 0.2s">
+                    <div class="card-image">
+                        <img src="images/saree3.png" alt="Ivory Gold Organza" onerror="this.src='https://images.unsplash.com/photo-1583391733975-6450f3b4da67?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="3" data-name="Ivory Gold Organza" data-price="195" data-img="images/saree3.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ivory Gold Organza</h3>
+                        <p class="price">$195.00</p>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="product-card fade-up" style="transition-delay: 0.3s">
+                    <div class="card-image">
+                        <img src="images/saree4.png" alt="Royal Blue Georgette">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="4" data-name="Royal Blue Georgette" data-price="210" data-img="images/saree4.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Royal Blue Georgette</h3>
+                        <p class="price">$210.00</p>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="product-card fade-up" style="transition-delay: 0.4s">
+                    <div class="card-image">
+                        <img src="images/saree5.png" alt="Rose Gold Sequin">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="5" data-name="Rose Gold Sequin" data-price="350" data-img="images/saree5.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Rose Gold Sequin</h3>
+                        <p class="price">$350.00</p>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="product-card fade-up" style="transition-delay: 0.5s">
+                    <div class="card-image">
+                        <img src="images/saree6.png" alt="Lavender Chiffon">
+                        <div class="card-overlay">
+                            <button class="btn-quickview">Quick View</button>
+                            <button class="btn-add-cart" data-id="6" data-name="Lavender Chiffon" data-price="180" data-img="images/saree6.png">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Lavender Chiffon</h3>
+                        <p class="price">$180.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Showcase -->
+        <section id="about" class="about section-padding">
+            <div class="about-grid">
+                <div class="about-image fade-up">
+                    <img src="images/about-saree.png" alt="Weaving process" onerror="this.src='https://images.unsplash.com/photo-1596450514735-111a2fe02935?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                </div>
+                <div class="about-text fade-up" style="transition-delay: 0.1s">
+                    <h2>Redefining Tradition</h2>
+                    <p>At Aura, we believe the saree is not just an outfit; it’s an art form. We curate pieces from master artisans across India, infusing them with a modern aesthetic suitable for today’s global Indian.</p>
+                    <a href="#collections" class="link-arrow">Read our manifesto &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="section-title fade-up">
+                <h2>Visit Us</h2>
+                <p>Experience the luxury in person</p>
+            </div>
+            <div class="contact-card fade-up">
+                <p><strong>Aura Flagship Store</strong></p>
+                <p>123 Fashion Avenue, Suite 400<br>Mumbai, Maharashtra 400001</p>
+                <p>Email: hello@auraboutique.in</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials section-padding" style="background-color: #fff;">
+            <div class="section-title fade-up">
+                <h2>Client Diaries</h2>
+                <p>What our beautiful brides and customers say</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="stars">★★★★★</div>
+                    <p>"The burgundy silk saree I ordered was absolutely breathtaking. The quality of the silk and the craftsmanship exceeded my expectations!"</p>
+                    <h4>- Priya M.</h4>
+                </div>
+                <div class="testimonial-card fade-up" style="transition-delay: 0.1s">
+                    <div class="stars">★★★★★</div>
+                    <p>"Aura is my go-to for all weddings in the family. Their curated collection is trendy yet respects our traditional weaving roots."</p>
+                    <h4>- Anjali R.</h4>
+                </div>
+                <div class="testimonial-card fade-up" style="transition-delay: 0.2s">
+                    <div class="stars">★★★★★</div>
+                    <p>"The velvet drape was so elegant and easy to wear! Received so many compliments. Thank you Aura!"</p>
+                    <h4>- Sarah K.</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section-padding">
+            <div class="newsletter-content fade-up">
+                <h2>Join the Aura Club</h2>
+                <p>Subscribe to our newsletter for exclusive offers, new arrivals, and styling tips.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Aura.</h2>
+                <p>Modern luxury ethnic wear.</p>
+                <div class="social-icons" style="margin-top: 1rem; display: flex; gap: 1rem;">
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#contact">Contact</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary" id="checkout-btn" style="width: 100%; margin-top: 1rem;">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Payment Gateway Modal Simulation -->
+    <div class="payment-modal" id="payment-modal">
+        <div class="payment-content" style="max-height: 90vh; overflow-y: auto;">
+            <div class="payment-header">
+                <h3>Secure Checkout</h3>
+                <button class="close-payment" id="close-payment">&times;</button>
+            </div>
+            <div class="payment-body" id="payment-body">
+                <p><strong>Delivery Details:</strong></p>
+                <div class="payment-form" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+                    <input type="text" placeholder="Full Name" class="pay-input" required>
+                    <input type="text" placeholder="Shipping Address" class="pay-input" required>
+                    <div class="pay-row">
+                        <input type="text" placeholder="City" class="pay-input" required>
+                        <input type="text" placeholder="ZIP Code" class="pay-input" required>
+                    </div>
+                    <input type="tel" placeholder="Phone Number" class="pay-input" required>
+                </div>
+                <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #eee;">
+                <p><strong>Select Payment Method:</strong></p>
+                <div class="payment-methods">
+                    <button class="pay-btn active cc-btn">Credit Card</button>
+                    <button class="pay-btn upi-btn">UPI / GPay</button>
+                </div>
+                <div class="payment-form" id="payment-form">
+                    <input type="text" placeholder="Card Number" class="pay-input">
+                    <div class="pay-row">
+                        <input type="text" placeholder="MM/YY" class="pay-input">
+                        <input type="text" placeholder="CVC" class="pay-input">
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="process-pay-btn" style="width: 100%; margin-top: 1.5rem;">Pay Now</button>
+            </div>
+            <div class="payment-success" id="payment-success" style="display: none;">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" style="margin: 0 auto; display: block; margin-bottom: 1rem;">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <h3 style="text-align: center; color: green;">Payment Successful!</h3>
+                <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem;">Thank you for your purchase. Your order is being processed and will be shipped to the provided address.</p>
+                <button class="btn btn-secondary" id="continue-shopping" style="width: 100%; margin-top: 1.5rem;">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick View Modal -->
+    <div class="quickview-modal" id="quickview-modal">
+        <div class="quickview-content">
+            <button class="close-quickview" id="close-quickview">&times;</button>
+            <div class="quickview-grid">
+                <div class="quickview-img">
+                    <img src="" alt="Product" id="qv-img">
+                </div>
+                <div class="quickview-info">
+                    <h2 id="qv-title">Product Name</h2>
+                    <p class="qv-price" id="qv-price">$0</p>
+                    <p class="qv-desc">Experience unparalleled elegance with this beautifully crafted luxury saree. Perfect for weddings, receptions, and special occasions. Carefully sourced premium materials and master craftsmanship ensure you stand out in the crowd.</p>
+                    <div class="qv-details">
+                        <p><strong>Fabric:</strong> Premium Silk / Georgette</p>
+                        <p><strong>Wash Care:</strong> Dry Clean Only</p>
+                        <p><strong>Delivery:</strong> 3-5 Business Days</p>
+                    </div>
+                    
+                    <div class="qv-options" style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="qv-blouse" style="display:block; margin-bottom:0.3rem; font-weight:600;">Blouse Stitching</label>
+                            <select id="qv-blouse" class="pay-input" style="width:100%; padding:0.6rem;">
+                                <option value="Unstitched" data-price="0">Unstitched (Included)</option>
+                                <option value="Stitched" data-price="25">Stitched (+$25.00)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="qv-fall" style="display:block; margin-bottom:0.3rem; font-weight:600;">Fall & Edging (Pico)</label>
+                            <select id="qv-fall" class="pay-input" style="width:100%; padding:0.6rem;">
+                                <option value="Yes" data-price="5">Yes (+$5.00)</option>
+                                <option value="No" data-price="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="qv-add-cart" style="width: 100%; margin-top: 1.5rem;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
