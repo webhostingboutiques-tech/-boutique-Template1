@@ -1,0 +1,16 @@
+# Task List
+
+- [ ] Plan website structure and design language.
+- [ ] Create base HTML structure (`index.html`).
+- [ ] Implement modern CSS styling and layout (`style.css`).
+  - [ ] Set up color palette (rich elegant colors), typography, and CSS variables.
+  - [ ] Build Hero Section with striking typography and animations.
+  - [ ] Build Featured Collections section (grid layout).
+  - [ ] Build About Us and Testimonials sections.
+  - [ ] Build Footer.
+- [ ] Add modern animations and interactivity (`script.js` & CSS).
+  - [ ] Smooth reveal animations on scroll.
+  - [ ] Hover effects on products.
+- [ ] Generate demo images for sarees using AI to make the site look premium.
+- [ ] Responsive design for mobile and tablet devices.
+- [ ] Final visual polish and review.
